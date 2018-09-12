@@ -54,7 +54,7 @@ namespace CardGames.GameLogic
 		/// </summary>
 		public void Shuffle()
 		{
-			for (int i = 0; i < 52; i++) 
+			for (int i = 0; i< 52; i++) 
 			{
 				if (_cards [i].FaceUp) _cards [i].TurnOver ();
 			}
@@ -62,7 +62,7 @@ namespace CardGames.GameLogic
 			Random rnd = new Random ();
 
 			//for each card (no need to shuffle last card)
-			for (int i = 0; i < 52 - 1; i++) 
+			for (int i = 0; i< 52 - 1; i++) 
 			{
 				//pick a random index
 				int rndIdx = rnd.Next (52 - i);
